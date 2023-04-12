@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    android:background="@drawable/roadtexture">
+
+    <LinearLayout
+        android:id="@+id/llUpper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="-30dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/rlMiddle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/spot10"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot10"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot9"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot9"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot8"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot8"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot7"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot7"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot6"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot6"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot5"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot5"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot4"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot4"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot3"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot3"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot2"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot2"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spot1"
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/parkspot1"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="625dp"
+        android:translationY="-15dp"
+        android:src="@drawable/entrysign"
+        app:layout_constraintTop_toBottomOf="@id/llUpper"
+        app:layout_constraintBottom_toTopOf="@id/rlMiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/rlMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        app:layout_constraintTop_toBottomOf="@+id/llUpper"
+        app:layout_constraintBottom_toTopOf="@id/llBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llUpperLine">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot29"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot29"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot30"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot30"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot31"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot31"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot32"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot32"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot33"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot33"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot34"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot34"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot35"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot35"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot36"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot36"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llLowerLine"
+            android:layout_below="@+id/llUpperLine">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot28"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot28"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot27"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot27"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot26"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot26"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot25"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot25"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot24"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot24"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot23"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot23"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot22"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot22"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:id="@+id/spot21"
+                android:layout_margin="3dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/parkspot21"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="30dp"
+        app:layout_constraintTop_toBottomOf="@id/rlMiddle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot11"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot11"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot12"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot12"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot13"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot13"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot14"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot14"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot15"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot15"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot16"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot16"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot17"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot17"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot18"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot18"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot19"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot19"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/spot20"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/parkspot20"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

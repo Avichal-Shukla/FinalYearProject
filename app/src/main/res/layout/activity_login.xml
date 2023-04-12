@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/logo">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARK SMART"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/ivLoginLogo"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLoginSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find your own spot"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/tvLoginTitle"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLoginPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/tvLoginSlogan"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgForRBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvLoginPurpose"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:id="@+id/rbUser"
+            android:checked="true">
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="admin"
+            android:id="@+id/rbAdmin"
+            android:layout_toEndOf="@+id/rbUser">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:hint="Contact number"
+        android:id="@+id/tilLoginUserPhone"
+        android:focusable="true"
+        android:layout_centerHorizontal="true"
+        app:startIconDrawable="@drawable/phone"
+        android:layout_below="@+id/rgForRBtn"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/tilLoginPwd"
+        android:focusable="true"
+        app:passwordToggleEnabled="true"
+        android:layout_centerHorizontal="true"
+        app:startIconDrawable="@drawable/pwdlogo"
+        android:layout_below="@+id/tilLoginUserPhone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/tilLoginPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Log In">
+    </Button>
+
+    <TextView
+        android:id="@+id/tvAskAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="80dp"
+        android:text="Don't have an account?"
+        android:textSize="16dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnAskSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvAskAccount"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@+id/tvAskAccount"
+        android:text="Sign up!"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground">
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWelcome"
+        android:text="Welcome admin"
+        android:textStyle="bold|italic"
+        android:textSize="17dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlHomePageAdmin"
+        android:layout_below="@id/tvWelcome">
+
+        <TextView
+            android:id="@+id/NameAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Admin Name"
+            android:fontFamily="serif"
+            android:textSize="30dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/map_image"
+            android:layout_marginStart="230dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btnBookedUsers"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/payment_logo"
+            android:layout_marginStart="275dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btnBackToUser"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/logout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/history_icon"
+            android:layout_toStartOf="@+id/btnBackToUser"
+            android:layout_marginEnd="15dp">
+        </Button>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHistoryDataHeading"
+        android:text="Users who have occupied a slot currently"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/rlHomePageAdmin">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlForUserDataHistory"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvHistoryDataHeading">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvUserDataHistory">
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

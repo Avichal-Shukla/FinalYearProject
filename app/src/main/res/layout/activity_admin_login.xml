@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin">
+
+    <ImageView
+        android:id="@+id/ivLoginLogoAd"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/logo">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvLoginTitleAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARK SMART"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/ivLoginLogoAd"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLoginSloganAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find your own spot"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/tvLoginTitleAd"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLoginPurposeAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In as Admin"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/tvLoginSloganAd"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:hint="Admin ID"
+        android:id="@+id/tilLoginPwdAd"
+        android:focusable="true"
+        app:startIconDrawable="@drawable/user"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvLoginPurposeAd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLoginAd"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/tilLoginPwdAd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Log In">
+    </Button>
+
+    <Button
+        android:id="@+id/btnAskSignUpAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginAd"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:text=" Add Admin"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textColor="#787373"
+        android:textStyle="bold"
+        android:background="?android:attr/selectableItemBackground">
+    </Button>
+
+</RelativeLayout>

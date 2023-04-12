@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slotHeading"
+        android:text="SLOT 18"
+        android:layout_centerHorizontal="true"
+        android:textColor="#857C8F"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#CED1D5">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlDistanceP18"
+        android:layout_below="@+id/slotHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#E0DDE3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvForP18"
+            android:text="Distance from entrance :"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDistanceP18"
+            android:text="200m"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvForP18"
+            android:gravity="center">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2DistanceP18"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:background="#D0D9DA"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/rlDistanceP18"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEntrance"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:background="#ECE9F3"
+            android:padding="10dp"
+            android:text="Entrance"
+            android:textSize="20sp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/ivP18"
+            android:layout_centerVertical="true"
+            android:src="@drawable/parkspot18">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="300dp"
+            android:id="@+id/ivVerLine"
+            android:background="@color/black"
+            android:layout_above="@+id/tvEntrance"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="85dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:id="@+id/ivHorLine"
+            android:background="@color/black"
+            android:layout_above="@+id/ivVerLine"
+            android:layout_toStartOf="@+id/ivVerLine">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="120dp"
+            android:id="@+id/ivVerLine2"
+            android:background="@color/black"
+            android:layout_below="@+id/ivHorLine"
+            android:layout_marginStart="175dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivHorLine2"
+            android:background="@drawable/ic_baseline_keyboard_left_24"
+            android:layout_below="@+id/ivVerLine2"
+            android:layout_marginStart="90dp"
+            android:translationY="-13dp"
+            android:translationX="-30dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/ivVerLine"
+            android:text="Straight 100m"
+            android:textStyle="bold"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="15dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ivHorLine2"
+            android:layout_marginStart="80dp"
+            android:layout_marginBottom="70dp"
+            android:text="Straight 70m"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ivHorLine"
+            android:text="Left 30m"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="170dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivHorLine2"
+            android:text="Left"
+            android:layout_marginStart="130dp"
+            android:textStyle="bold"
+            android:translationY="-20dp">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

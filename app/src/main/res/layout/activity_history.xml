@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWelcomeHistory"
+        android:text="Welcome admin"
+        android:textStyle="bold|italic"
+        android:textSize="17dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlHomePageAdmin"
+        android:layout_below="@id/tvWelcomeHistory">
+
+        <TextView
+            android:id="@+id/NameAdminHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Your Name"
+            android:fontFamily="serif"
+            android:textSize="30dp"
+            android:textStyle="bold">
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHistoryDataHeading"
+        android:text="History"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/rlHomePageAdmin">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlForUserDataHistory"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvHistoryDataHeading">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvUserDataHistory">
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
